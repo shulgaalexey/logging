@@ -27,12 +27,13 @@ namespace HelloLogentries {
 			};
 
 			// Marshaling log record to json
-			string json = JsonConvert.SerializeObject(lr, Formatting.Indented);
+			//string json = JsonConvert.SerializeObject(lr, Formatting.Indented);
+			string json = "Hello Tizen!";
 
 			// Different types of loggin
-			log.Info($"Log info:\n{json}");
-			log.Debug($"Log Debug:\n{json}");
-			Console.WriteLine($"Console WriteLine:\n{json}");
+			log.Info($"Log info: {json}");
+			log.Debug($"Log Debug: {json}");
+			Console.WriteLine($"Console WriteLine: {json}");
 		}
 
 		static void Main(string[] args) {
